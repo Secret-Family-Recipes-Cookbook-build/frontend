@@ -4,6 +4,7 @@ import Home from './Home';
 import './App.css';
 import Login from './Login';
 import Main from './Main';
+import Cards from './Cards';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
               <Main />
             </Route>
             <Route path='/recipe'>
-              
+              <Cards />
             </Route>
       </div>
     </Router>

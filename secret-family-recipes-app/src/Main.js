@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '@material-ui/core/Button';
 import Search from './Search';
+import Cards from './Cards';
 
 const WrapperDiv = styled.div`
     display: flex;
@@ -23,7 +24,7 @@ function Main() {
                     Add New Recipe
                 </Button>
                 <Button
-                    href='#'
+                    href='/recipe'
                     size='large'
                     variant='contained'
                     color='primary'>

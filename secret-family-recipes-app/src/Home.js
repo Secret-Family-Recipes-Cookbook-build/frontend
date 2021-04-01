@@ -1,14 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
 // import { useHistory } from 'react-router-dom';
-import Button from '@material-ui/core/Button'
+import Button from '@material-ui/core/Button';
+import Cards from './Cards'
 
 
-
-// Styled Components
-const WrapperDiv = styled.div`
-    display: flex;
-`;
 
 
 
@@ -39,12 +34,10 @@ export default function Home() {
             <div className='main-pic'>
                 <img src="https://unsplash.it/200/200" alt="delicious meal" />
             </div>
-            <h3>Our Top Three Recipes</h3>        
-            <WrapperDiv>
-                    <img src="https://unsplash.it/200/200" alt="family fav one" />
-                    <img src="https://unsplash.it/200/200" alt='family fav two' />
-                    <img src="https://unsplash.it/200/200" alt='family fav three' />
-            </WrapperDiv>  
+            <h3>Our Recipes Need To Be Tasted!</h3>        
+            <div className='cards-div'>
+                <Cards />
+            </div>  
         </div>
     )
 }
