@@ -1,6 +1,7 @@
 import axios from 'axios';
 import { useHistory } from "react-router";
 import React, { useState } from 'react';
+import Button from '@material-ui/core/Button';
 
 const initialValues = {
     username: "",
@@ -44,7 +45,13 @@ function Login() {
             value={formValues.password}
             onChange={handleChanges}
             />
-            <button>Login</button>
+            <Button
+                href='/main'
+                size='large'
+                variant='contained'
+                color='primary'>
+                Log In
+            </Button>
         </form>
     )
 }

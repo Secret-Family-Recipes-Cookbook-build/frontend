@@ -3,6 +3,8 @@ import styled from 'styled-components';
 // import { useHistory } from 'react-router-dom';
 import Button from '@material-ui/core/Button'
 
+
+
 // Styled Components
 const WrapperDiv = styled.div`
     display: flex;
@@ -24,18 +26,18 @@ export default function Home() {
     return (
         <div>
             <div className='top-div'>
-            {/* <button onClick={recipeAdd} className='recipe-button'> Add New Recipe </button> */}
-            <Button 
-                href='#' 
-                size='large'
-                variant='contained' 
-                color='primary'>
-                Sign in here
-            </Button>
-            <h1>Secret Family Recipes</h1>
+                {/* <button onClick={recipeAdd} className='recipe-button'> Add New Recipe </button> */}
+                <Button 
+                    href='/login' 
+                    size='large'
+                    variant='contained' 
+                    color='primary'>
+                    Sign in here
+                </Button>
+                <h1>Secret Family Recipes</h1>
             </div>
             <div className='main-pic'>
-            <img src="https://unsplash.it/200/200" alt="delicious meal" />
+                <img src="https://unsplash.it/200/200" alt="delicious meal" />
             </div>
             <h3>Our Top Three Recipes</h3>        
             <WrapperDiv>
